@@ -29,6 +29,16 @@
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
+\usepackage[
+    backend=biber,
+    style=numeric,
+    natbib=true,
+    url=true, 
+    doi=true,
+    eprint=false,
+    sorting=nyt
+]{biblatex}
+\addbibresource{refs.bib}
 \lstset{frame=tb,
   language=C++,
   aboveskip=3mm,
@@ -60,8 +70,20 @@ leftmargin=-5pt,rightmargin=-5pt,
 innerleftmargin=5pt,innerrightmargin=5pt]{mybox}
 \setcounter{chapter}{-1}
 \begin{document}
+%Order of compilation (on TexMaker): F6 (pdfLaTex) -> F11 (BibTex) -> F6 (pdfLaTex) -> F7 (view pdf)
 \input{cover/Cover}
+
 \input{authors/Authors}
-%\setcounter{page}{1}
-%\pagenumbering{arabic}
+\newpage
+
+\input{sources/prefaces/Prefaces}
+\newpage
+
+\tableofcontents
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\input{sources/chapters/chapter0_Introductions/Chapter0}
+
+\printbibliography
 \end{document}

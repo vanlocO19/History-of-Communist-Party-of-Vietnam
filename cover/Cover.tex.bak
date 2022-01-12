@@ -1,0 +1,28 @@
+\begin{titlepage}
+\begin{mybox}
+\begin{center}
+\fontsize{12}{12}\selectfont
+\textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}
+\end{center}
+\vskip 2 cm
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{images/CPV-logo}
+\end{center}
+\end{figure}
+\vskip 3 cm
+\begin{center}
+\fontsize{18}{14}\selectfont
+\textbf{GIÁO TRÌNH}\\
+\fontsize{20}{16}\selectfont
+\textbf{LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM}\\
+\fontsize{18}{12}\selectfont
+\textbf{(Sử dụng trong các trường đại học $-$ hệ không chuyên lý luận chính trị)}
+\end{center}
+\vskip 1 cm
+\vskip 3 cm
+\begin{center}
+\textbf{HÀ NỘI, THÁNG 9 NĂM 2019}
+\end{center}
+\end{mybox}
+\end{titlepage}
