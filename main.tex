@@ -23,8 +23,9 @@
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows, calc}
 \usepackage{fancyhdr}
+\usepackage{afterpage}
 \usepackage{longtable}
-\pagestyle{fancy}
+\pagestyle{headings}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
@@ -46,6 +47,11 @@
 }
 \renewcommand{\listfigurename}{Danh sách hình}
 \renewcommand{\listtablename}{Tables}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Nguyễn Văn Lộc}
@@ -55,5 +61,7 @@ innerleftmargin=5pt,innerrightmargin=5pt]{mybox}
 \setcounter{chapter}{-1}
 \begin{document}
 \input{cover/Cover}
-\newpage
+\input{authors/Authors}
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
 \end{document}
