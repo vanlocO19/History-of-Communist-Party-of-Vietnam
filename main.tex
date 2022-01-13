@@ -25,7 +25,16 @@
 \usepackage{fancyhdr}
 \usepackage{afterpage}
 \usepackage{longtable}
+\usepackage{chngcntr}
 \pagestyle{fancy}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\counterwithin*{subsubsection}{subsection}
+\renewcommand*{\thesection}{\Roman{section}.}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\alph{subsection}.}
 \fancyhf{}
 \fancyhead[RE, LO]{Giáo trình Lịch sử Đảng Cộng sản Việt Nam}
 \fancyfoot[CE,CO]{\thepage}
