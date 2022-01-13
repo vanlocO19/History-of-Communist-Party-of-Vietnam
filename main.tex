@@ -75,6 +75,11 @@
     \addtocounter{page}{-1}%
     \newpage}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Nguyễn Văn Lộc}
 \newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,
